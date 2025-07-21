@@ -14,3 +14,9 @@ tst performs and with set flag (doesn't modify the reg)
 
 echo $? --> r0
 
+subgt subtracts only when gt condition is true
+
+mov r0, r1, lsl #1 (logical shift left)
+
+a word is 4 bytes in 32 bit arm chip
+
