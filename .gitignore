@@ -1,3 +1,11 @@
+# emacs backup files
+
 *~
 \#*\#
 .\#*
+
+# object files
+
+*.o
+*.elf
+
