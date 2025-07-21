@@ -9,36 +9,17 @@
 
 
 _start:
-	mov r7, #3
 	mov r0, #0
-	ldr r1, =character
-	mov r2, #1
+	b _continue_loop
+
+_loop:
+	add r0, r0, #1
+
+_continue_loop:
+	cmp r0, #9
+	ble _loop
+
+end:
+	mov r7, #1
 
 	swi 0
-
-_uppercase:
-	ldr r1, =character
-	ldr r0, [r1]
-	bic r0, r0, #32
-	str r0, [r1]
-	
-	swi 0
-
-_write:
-	mov r7, #4
-	mov r0, #1
-	ldr r1, =character
-	mov r2, #1
-
-	swi 0
-	
-exit:
-	mov r7, #0x01
-	mov r0, #0
-
-	swi 0
-
-	.section .data
-character:
-	.ascii " "
-
