@@ -40,3 +40,4 @@ byte or hword
 for byte use ldrb
 ldrb r0, [r3, #2] --> 3rd index in the memory
 
+.asciz automatically appends null termination to the end
