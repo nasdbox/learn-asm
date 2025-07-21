@@ -20,3 +20,14 @@ mov r0, r1, lsl #1 (logical shift left)
 
 a word is 4 bytes in 32 bit arm chip
 
+===============================================
+				GDB stuff
+===============================================
+list
+disassemble _start
+b 14
+delete 14
+run
+info r
+continue
+quit
