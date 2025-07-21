@@ -31,3 +31,8 @@ run
 info r
 continue
 quit
+x/4w _start --> examine 4 word worth of data in _start
+
+str r4, [r3] --> *r3 = r4
+ldr r0, [r3] --> r0 = *r3
+
