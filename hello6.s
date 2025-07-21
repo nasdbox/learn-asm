@@ -9,6 +9,9 @@ primes:
 	
 	.section .text
 
+numbers:
+	.byte 1, 2, 3, 4, 5
+	
 _start:
 	ldr r3, =primes
 	ldr r0, [r3, #8]
